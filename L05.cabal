@@ -1,0 +1,10 @@
+cabal-version: 3.0
+name:          L05
+version:       0.1
+
+library
+  exposed-modules:  L05_IO
+  default-language: Haskell2010
+  build-depends:    base, falsify, random, selective
+  ghc-options:      -Werror=all -pgmL markdown-unlit
+  hs-source-dirs:   .
