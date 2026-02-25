@@ -1,0 +1,28 @@
+cabal-version: 3.0
+name:          L06
+version:       0.1
+
+common stanzas
+    hs-source-dirs: .
+    default-language: Haskell2010
+    ghc-options: -Werror=all -O2 -threaded -rtsopts -with-rtsopts=-N
+
+executable parallel_naive_fib
+    import: stanzas
+    main-is: parallel_naive_fib.hs
+    build-depends: base, parallel
+
+executable simple_hash
+    import: stanzas
+    main-is: simple_hash.hs
+    build-depends: base, bytestring, pureMD5
+
+executable locking_hash
+    import: stanzas
+    main-is: locking_hash.hs
+    build-depends: base, bytestring, pureMD5
+
+executable stm_example
+    import: stanzas
+    main-is: stm_example.hs
+    build-depends: base, random, stm
