@@ -16,3 +16,8 @@ library L06-STM
   import:          stanzas
   exposed-modules: L06_STM
   build-depends:   base, bytestring, pureMD5, stm
+
+library L11-Generics
+  import:          stanzas
+  exposed-modules: L11_Generics
+  build-depends:   base
