@@ -21,3 +21,8 @@ library L11-Generics
   import:          stanzas
   exposed-modules: L11_Generics
   build-depends:   base
+
+library L12-Refinements
+  import:          stanzas
+  exposed-modules: L12_Refinements
+  build-depends:   base, refined
