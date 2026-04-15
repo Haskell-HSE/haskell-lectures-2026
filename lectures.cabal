@@ -26,3 +26,13 @@ library L12-Refinements
   import:          stanzas
   exposed-modules: L12_Refinements
   build-depends:   base, refined
+
+library L13-Typeable
+  import:          stanzas
+  exposed-modules: L13_Typeable
+  build-depends:   base, containers
+
+library 13-ST
+  import:          stanzas
+  exposed-modules: L13_ST
+  build-depends:   base
