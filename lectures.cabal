@@ -32,7 +32,12 @@ library L13-Typeable
   exposed-modules: L13_Typeable
   build-depends:   base, containers
 
-library 13-ST
+library L13-ST
   import:          stanzas
   exposed-modules: L13_ST
+  build-depends:   base
+
+library L14-Exceptions
+  import:          stanzas
+  exposed-modules: L14_Exceptions
   build-depends:   base
