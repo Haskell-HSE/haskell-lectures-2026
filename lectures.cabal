@@ -40,4 +40,4 @@ library L13-ST
 library L14-Exceptions
   import:          stanzas
   exposed-modules: L14_Exceptions
-  build-depends:   base
+  build-depends:   base, bytestring, resourcet, transformers, unliftio-core
