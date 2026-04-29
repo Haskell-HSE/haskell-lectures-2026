@@ -41,3 +41,8 @@ library L14-Exceptions
   import:          stanzas
   exposed-modules: L14_Exceptions
   build-depends:   base, bytestring, resourcet, transformers, unliftio-core
+
+library L15-Lenses
+  import:          stanzas
+  exposed-modules: L15_Lenses
+  build-depends:   base
