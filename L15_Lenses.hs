@@ -60,7 +60,7 @@ stackLenses (MkSimpleLens gAB sAB) (MkSimpleLens gBC sBC) = MkSimpleLens
     }
 
 instance Category SimpleLens where
-    id = MkSimpleLens { slGet = id, slSet = \a a' -> a' }
+    id = MkSimpleLens { slGet = id, slSet = \_a a' -> a' }
     l1 . l2 = stackLenses l2 l1
 
 playerItems :: SimpleLens Player [Item]
@@ -120,7 +120,7 @@ getFromModify1 m a = runConst (m MkConst a)
 type Modify2 a b = forall f. (b -> f b) -> a -> f a
 
 modifyPlayerItems :: Modify2 Player [Item]
-modifyPlayerItems f p = error "Impossible"
+modifyPlayerItems _f _p = error "Impossible"
 
 type SimpleVL a b = forall f. Functor f => (b -> f b) -> (a -> f a)
 
