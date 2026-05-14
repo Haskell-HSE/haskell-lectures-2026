@@ -46,3 +46,9 @@ library L15-Lenses
   import:          stanzas
   exposed-modules: L15_Lenses
   build-depends:   base
+
+library L16-FFI
+  import:          stanzas
+  exposed-modules: L16_FFI
+  c-sources:       L16_FFI.c
+  build-depends:   base
