@@ -52,3 +52,8 @@ library L16-FFI
   exposed-modules: L16_FFI
   c-sources:       L16_FFI.c
   build-depends:   base
+
+library L17-FRP
+  import:          stanzas
+  exposed-modules: L17_FRP
+  build-depends:   base, reactive-banana

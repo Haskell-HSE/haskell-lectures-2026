@@ -1,0 +1,2 @@
+allow-newer: reactive-banana:pqueue
+packages: .
