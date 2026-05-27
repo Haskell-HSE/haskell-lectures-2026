@@ -57,3 +57,8 @@ library L17-FRP
   import:          stanzas
   exposed-modules: L17_FRP
   build-depends:   base, reactive-banana
+
+library L18-Streaming
+  import:          stanzas
+  exposed-modules: L18_Streaming
+  build-depends:   base
